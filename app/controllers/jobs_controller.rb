@@ -11,11 +11,14 @@ class JobsController < ApplicationController
   end
 
   def show
+    # respond_to do |format|
+    #   format.html
+    #   format.json #{ render json: @job }#as_json } #(only: [:title, :url], include: [:category])}
+    # end
   end
 
   def new
     @job = Job.new
-
   end
 
   def create
